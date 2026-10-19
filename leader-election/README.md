@@ -1,6 +1,6 @@
 # Leader Election
 
-A deterministic election chooses the highest-priority live node and records an epoch, showing that a leader must be fenced by its term.
+A deterministic example chooses the highest-priority live node and prints a fixed epoch beside it. It does not run a quorum election or persist/fence terms; production protocols need those guarantees.
 
 ## Trade-offs
 

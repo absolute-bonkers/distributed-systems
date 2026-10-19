@@ -1,10 +1,10 @@
 # Bloom Filters
 
-A tiny bit-set Bloom filter demonstrates probabilistic membership: inserted values may be present, while absent values can produce false positives.
+A tiny bit-set Bloom filter demonstrates probabilistic membership: inserted values are reported present, while absent values may produce false positives. The local example uses two deterministic hash positions and is a teaching sketch, not a sized or production filter.
 
 ## Trade-offs
 
-Space-efficient membership checks allow false positives but never false negatives for inserted values (absent deletions); sizing and hash quality matter.
+Space-efficient membership checks can return false positives but, in this insert-only example, never return a false negative for an inserted value. Standard Bloom filters do not support ordinary deletion; sizing and hash quality matter.
 
 ## Run the example and test
 
@@ -19,4 +19,4 @@ Space-efficient membership checks allow false positives but never false negative
 
 ## Further primary references
 
-- Bloom filters — [original paper DOI](https://doi.org/10.1145/362686.362692)
+- [GeeksforGeeks — Bloom Filters](https://www.geeksforgeeks.org/python/bloom-filters-introduction-and-python-implementation/) — An accessible implementation walkthrough; the original paper remains the primary source above.

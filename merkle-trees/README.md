@@ -1,6 +1,6 @@
 # Merkle Trees
 
-A SHA-256 Merkle root is computed from two leaves; changing a leaf changes the root and detects content tampering.
+A teaching SHA-256 Merkle root is computed from two leaves; changing a leaf changes the root, provided the expected root is trusted. The demo does not implement a proof, domain separation, or a full tree format.
 
 ## Trade-offs
 

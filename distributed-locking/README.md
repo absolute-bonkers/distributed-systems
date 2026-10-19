@@ -15,8 +15,10 @@ Leases need bounded clock assumptions and fencing at the protected resource; a l
 
 - [Runnable Java 21 example](../distributed/src/main/java/com/absolutebonkers/distributed/distributedlocking/DistributedLockingDemo.java)
 - [Focused JUnit test](../distributed/src/test/java/com/absolutebonkers/distributed/distributedlocking/DistributedLockingTest.java)
-- [Primary reference](https://etcd.io/docs/v3.5/learning/lock/)
+- [Primary reference](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)
 
 ## Further primary references
 
-- etcd distributed locks — [documentation](https://etcd.io/docs/v3.5/learning/lock/)
+- etcd lock API — [official concurrency API reference](https://etcd.io/docs/v3.5/dev-guide/api_concurrency_reference_v3/)
+
+The local example only compares fencing-token values; it does not implement leases, a lock service, or a protected resource.

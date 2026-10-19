@@ -1,6 +1,6 @@
 # Gossip Protocol
 
-A bounded membership propagation simulation merges peer views over successive rounds until all nodes know the same members.
+A one-round membership-propagation simulation merges two peer views into one node's view. It illustrates set union, not repeated gossip rounds, probabilistic convergence, or a full membership protocol.
 
 ## Trade-offs
 

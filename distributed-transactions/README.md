@@ -1,6 +1,6 @@
 # Distributed Transactions (2PC, 3PC, Saga)
 
-A two-step Saga reserves inventory, then simulates a payment failure and runs a compensating release.
+A label-only Saga trace represents inventory reservation, payment failure, and a compensating release. It does not execute durable local transactions or change inventory/payment state.
 
 ## Trade-offs
 
@@ -19,4 +19,5 @@ A two-step Saga reserves inventory, then simulates a payment failure and runs a 
 
 ## Further primary references
 
-- Two-phase commit overview — [Microsoft Learn](https://learn.microsoft.com/azure/architecture/reference-architectures/saga/saga)
+- Saga architecture — [Microsoft Learn](https://learn.microsoft.com/azure/architecture/reference-architectures/saga/saga) — Describes compensating transactions and the Saga alternative to a distributed transaction coordinator.
+- Two-phase commit implementation — [PostgreSQL prepared transactions](https://www.postgresql.org/docs/current/two-phase.html) — Documents the prepare/commit workflow and operational limitations in a production database.

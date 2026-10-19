@@ -19,4 +19,4 @@ Lamport clocks order causally related events but cannot detect concurrency; vect
 
 ## Further primary references
 
-- Vector clocks — [Leslie Lamport paper](https://lamport.azurewebsites.net/pubs/vector-clocks.pdf)
+- Vector clocks — [Mattern, Virtual Time and Global States of Distributed Systems](https://vs.inf.ethz.ch/publ/papers/VirtTimeGlobStates.pdf)
