@@ -19,4 +19,4 @@ Merkle trees make set reconciliation and proofs efficient, but proof constructio
 
 ## Further primary references
 
-- Certificate Transparency Merkle proofs — [RFC 6962](https://www.rfc-editor.org/rfc/rfc6962)
+- Certificate Transparency Merkle proofs — [RFC 9162](https://www.rfc-editor.org/rfc/rfc9162) (updates RFC 6962)
